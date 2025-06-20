@@ -29,4 +29,13 @@ nav a:hover {
 
 header {font-size: 20px;  
         text-align: center;
+.sideber {
+    width:30%;
+    height: 30%;
+    margin:10px 0 10px 0;
+}
+.content {
+    width:70%;
+    height: 33%;
+    margin:10px 0 10px 0;
 }
