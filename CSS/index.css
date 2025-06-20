@@ -1,0 +1,32 @@
+
+nav ul {
+    display: flex;         
+    justify-content: center; 
+    list-style: none;      
+    padding: 0;             
+    margin: 0;             
+    background-color: #61a6ec; 
+}
+
+
+nav li {
+    margin: 0 20px;         
+}
+
+
+nav a {
+    text-decoration: none; 
+    color: #333;            
+    font-weight: bold;    
+    font-size: 16px;    
+}
+
+
+nav a:hover {
+    color: #007bff;       
+}
+
+
+header {font-size: 20px;  
+        text-align: center;
+}
