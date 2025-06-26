@@ -27,15 +27,25 @@ nav a:hover {
 }
 
 
-header {font-size: 20px;  
-        text-align: center;
-.sideber {
-    width:30%;
-    height: 30%;
-    margin:10px 0 10px 0;
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #007bff;
+    padding: 10px;
+    position: relative; /* ★ これがあるか確認！ */
 }
-.content {
-    width:70%;
-    height: 33%;
-    margin:10px 0 10px 0;
+
+/* headerの中のimgタグ（ロゴ）のスタイル */
+header img {
+    height: 50px;
+}
+
+/* headerの中のh1タグ（サイトタイトル）のスタイル */
+header h1 {
+    position: absolute; /* ★ これがあるか確認！ */
+    left: 50%;        /* ★ これがあるか確認！ */
+    transform: translateX(-50%); /* ★ これがあるか確認！ */
+    margin: 0;
+    font-size: 30px;
 }
