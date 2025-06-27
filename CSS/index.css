@@ -54,6 +54,8 @@ ul {
 .main-nav a {
     font-size: 16px;
     font-weight: 500;
+    color: white;
+    font-weight: bold;
 }
 
 .contact-button {
@@ -163,7 +165,40 @@ ul {
     text-align: right;
     margin-top: 20px;
     font-size: 14px;
-    color: #888;
+    color: #2020d6;
+    font-weight: bold;
+}
+
+/* === お問い合わせセクション === */
+.cta-section {
+  /* 背景を左から右へのグラデーションに設定 */
+  background: linear-gradient(to right, #4a62a0, #2c3152);
+  color: white; /* 文字色を白に */
+  padding: 80px 20px; /* 上下の余白を多めに取る */
+  text-align: center; /* 中の要素を中央揃えに */
+}
+
+.cta-section h2 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+.cta-button {
+  display: inline-block; /* ボタンらしく見せるため */
+  background-color: white;
+  color: #333; /* ボタンの文字色を黒っぽく */
+  padding: 15px 50px; /* ボタンの大きさを調整 */
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none; /* リンクの下線を消す */
+  transition: opacity 0.3s; /* ホバー時のアニメーション */
+}
+
+.cta-button:hover {
+  opacity: 0.8; /* マウスを乗せると少し透明にする */
 }
 
 
