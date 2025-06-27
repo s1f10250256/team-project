@@ -69,7 +69,40 @@ ul {
     padding: 10px 20px;
     border-radius: 5px;
     white-space: nowrap; /* ボタン内で文字が改行しないように */
+
+
+    
 }
+
+
+
+.hero {
+    background-color: #f0f8ff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: white;
+    display: inline-block;
+    padding: 30px 0px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.hero-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
 
 
 /* —— メインカード群 —— */ 
