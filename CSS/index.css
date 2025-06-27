@@ -1,51 +1,181 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    color: #333;
+    background-color: #fff;
+}
 
-nav ul {
-    display: flex;         
-    justify-content: center; 
-    list-style: none;      
-    padding: 0;             
-    margin: 0;             
-    background-color: #61a6ec; 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 
-nav li {
-    margin: 0 20px;         
+/* ヘッダー  */
+.site-header {
+    display: flex;
+    justify-content: space-between; /* 両端に配置 */
+    align-items: center;           /* 上下中央ぞろえ */
+    padding: 10px 30px;            /* 内側の余白 */
+    background-color: #219fc2;
+}
+
+/* ヘッダー左側（ロゴとタイトル） */
+.header-left {
+    display: flex;
+    align-items: center; /* 中身を上下中央ぞろえ */
+    gap: 15px;           /* ロゴとタイトルの間のすき間 */
+}
+
+.header-left img {
+    height: 50px; /* ロゴの高さ */
 }
 
 
-nav a {
-    text-decoration: none; 
-    color: #333;            
-    font-weight: bold;    
-    font-size: 16px;    
+.header-left h1 {
+    margin: 0;
+    font-size: 24px;
+    white-space: nowrap; /* タイトルが途中で改行しないように */
 }
 
-
-nav a:hover {
-    color: #007bff;       
-}
-
-
-
-header {
+/* ヘッダー右側（ナビゲーションメニュー） */
+.main-nav ul {
     display: flex;
     align-items: center;
-    border-bottom: 2px solid #007bff;
-    padding: 10px;
-    position: relative; /* ★ これがあるか確認！ */
+    gap: 25px; /* メニュー項目の間のすき間 */
 }
 
-/* headerの中のimgタグ（ロゴ）のスタイル */
-header img {
-    height: 50px;
+.main-nav a {
+    font-size: 16px;
+    font-weight: 500;
 }
 
-/* headerの中のh1タグ（サイトタイトル）のスタイル */
-header h1 {
-    position: absolute; /* ★ これがあるか確認！ */
-    left: 50%;        /* ★ これがあるか確認！ */
-    transform: translateX(-50%); /* ★ これがあるか確認！ */
-    margin: 0;
+.contact-button {
+    background-color: #f0ad4e; /* オレンジ色 */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap; /* ボタン内で文字が改行しないように */
+}
+
+
+/* === メインコンテンツ（ヒーローセクション以下） === */
+.hero {
+    background-color: #f0f8ff;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: white;
+    display: inline-block;
+    padding: 30px 0px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.hero-content h1 {
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+
+.hero-content p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.matching-section {
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #555;
+}
+
+.matching-cases {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.case-card {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.case-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.case-card .profile {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+.case-card .description {
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.case-card .status {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+
+/* === スマートフォン向けの表示調整 === */
+@media (max-width: 860px) {
+    .site-header {
+        flex-direction: column; /* ヘッダーを縦並びにする */
+        gap: 20px;
+    }
+
+    .matching-cases {
+        flex-direction: column; /* カードを縦並びにする */
+        gap: 50px;
+    }
 }
